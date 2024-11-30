@@ -1,0 +1,27 @@
+### GET
+GET {{baseUrl}}/api/v1/users
+Accept: application/json
+
+### GET - User by id
+GET {{baseUrl}}/api/v1/users/9dd7a2d4-8157-49f6-91ea-0f545ae55f1e
+Accept: application/json
+
+### GET
+GET {{baseUrl}}/api/v1/users/username/test
+Accept: application/json
+
+### PUT (update username)
+PUT {{baseUrl}}/api/v1/users/9dd7a2d4-8157-49f6-91ea-0f545ae55f1e/username
+Content-Type: application/json
+
+{
+  "username": "test"
+}
+
+### PUT (update password)
+PUT {{baseUrl}}/api/v1/users/0fb65929-be85-4dfd-84f9-7681bf6eb5d7/password
+Content-Type: application/json
+
+{
+  "password": "password2"
+}
